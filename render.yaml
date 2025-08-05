@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tsa-item-checker
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: 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
+        sync: false
